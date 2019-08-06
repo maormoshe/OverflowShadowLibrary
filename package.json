@@ -11,7 +11,7 @@
     "build:directive": "ng build NgxOverflowShadow",
     "publish:directive": "cd dist/ngx-overflow-shadow && npm publish",
     "build:demo": "ng build --prod --base-href /OverflowShadowLibrary/",
-    "publish:demo": "ngh --no-silent --dir=dist/OverflowShadowLibrary"
+    "publish:demo": "git subtree push --prefix dist/OverflowShadowLibrary origin gh-pages"
   },
   "private": true,
   "dependencies": {
