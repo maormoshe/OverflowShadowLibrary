@@ -119,6 +119,42 @@
           }
         }
       }
-    }},
+    },
+    "NgxOverflowShadow": {
+      "projectType": "library",
+      "root": "projects/ngx-overflow-shadow",
+      "sourceRoot": "projects/ngx-overflow-shadow/src",
+      "prefix": "Ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ngx-overflow-shadow/tsconfig.lib.json",
+            "project": "projects/ngx-overflow-shadow/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-overflow-shadow/src/test.ts",
+            "tsConfig": "projects/ngx-overflow-shadow/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-overflow-shadow/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ngx-overflow-shadow/tsconfig.lib.json",
+              "projects/ngx-overflow-shadow/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "OverflowShadowLibrary"
 }

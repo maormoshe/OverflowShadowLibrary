@@ -8,8 +8,10 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "directive-build": "ng build NgxOverflowShadow",
-    "directive-publish": "cd dist/ngx-overflow-shadow && npm publish"
+    "build:directive": "ng build NgxOverflowShadow",
+    "publish:directive": "cd dist/ngx-overflow-shadow && npm publish",
+    "build:demo": "ng build --prod --base-href /OverflowShadowLibrary/",
+    "publish:demo": "ngh --no-silent --dir=dist/OverflowShadowLibrary"
   },
   "private": true,
   "dependencies": {
