@@ -10,7 +10,7 @@
     "e2e": "ng e2e",
     "build:directive": "ng build NgxOverflowShadow",
     "publish:directive": "cd dist/ngx-overflow-shadow && npm publish",
-    "build:demo": "ng build --prod --base-href /OverflowShadowLibrary/ && git add -A && git commit -am \"new demo\" && npm run publish:demo",
+    "build:n:publish:demo": "git checkout demo && git marge master && ng build --prod --base-href /OverflowShadowLibrary/ && git add -A && git commit -am \"new demo\" && npm run publish:demo && git checkout master",
     "publish:demo": "git subtree push --prefix dist/OverflowShadowLibrary origin gh-pages"
   },
   "private": true,
