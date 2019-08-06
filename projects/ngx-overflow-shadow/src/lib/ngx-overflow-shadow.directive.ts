@@ -9,7 +9,7 @@ export class NgxOverflowShadowDirective implements AfterViewInit, OnDestroy {
         bottom: 0
     };
 
-    @Input() shadowStyle = '0 0 8px 1px rgba(0, 0, 0, 0.8)';
+    @Input() shadowStyle = '0 0 8px 1px rgba(0, 0, 0, 0.5)';
 
     bottomShadowDiv: HTMLElement;
 
