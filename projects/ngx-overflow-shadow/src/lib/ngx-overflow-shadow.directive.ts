@@ -4,7 +4,12 @@ import {AfterViewInit, Directive, ElementRef, Input, OnDestroy, Renderer2} from 
     selector: '[ngxOverflowShadow]'
 })
 export class NgxOverflowShadowDirective implements AfterViewInit, OnDestroy {
-    @Input() bottomShadow = 'os_bottom-style';
+    private static DEFAULT_STYLE = {
+        position: 'sticky',
+        bottom: 0
+    };
+
+    @Input() shadowStyle = '0 0 8px 1px rgba(0, 0, 0, 0.8)';
 
     bottomShadowDiv: HTMLElement;
 
@@ -36,16 +41,21 @@ export class NgxOverflowShadowDirective implements AfterViewInit, OnDestroy {
 
     private createBottomShadowDiv(nativeElement: HTMLElement): void {
         this.bottomShadowDiv = this.renderer.createElement('div');
+        Object.keys(NgxOverflowShadowDirective.DEFAULT_STYLE).forEach((prop) => {
+            this.renderer.setStyle(this.bottomShadowDiv, prop, NgxOverflowShadowDirective.DEFAULT_STYLE[prop]);
+        });
         this.renderer.appendChild(nativeElement, this.bottomShadowDiv);
     }
 
-    private callback(entries): void {
+    private callback(entries: IntersectionObserverEntry[]): void {
         const {isIntersecting} = entries[0];
 
+        console.log(entries);
+
         if (isIntersecting) {
-            this.renderer.removeClass(this.bottomShadowDiv, this.bottomShadow);
+            this.renderer.removeStyle(this.bottomShadowDiv, 'boxShadow');
         } else {
-            this.renderer.addClass(this.bottomShadowDiv, this.bottomShadow);
+            this.renderer.setStyle(this.bottomShadowDiv, 'boxShadow', this.shadowStyle);
         }
     }
 }
