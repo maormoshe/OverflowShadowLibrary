@@ -1,14 +1,14 @@
-#NgxOverflowShadow
+# NgxOverflowShadow
 
 - A simple directive to be used on any scrollable container to adding a shadow on the bottom of the container.
 
-##Demo
+## Demo
 
 - A simple usage example can be found under `src/app` directory of this repository.
 
 - You may also visit the online usage example on `https://maormoshe.github.io/OverflowShadowLibrary/`
 
-##Installation
+## Installation
 
 1. Download from npm:  
 `npm install ngx-overflow-shadow --save`
@@ -21,11 +21,11 @@
  @NgModule({ ... imports: [ ... NgxOverflowShadowModule ] })
  ```
 
-##API
+## API
 
 Put the `ngxOverflowShadow` directive selector on any scrollable container.
 
-###Input()
+### Input()
 
 | Name           | Type       | Default                          | Description                                                           |
 |----------------|:----------:|:--------------------------------:|:----------------------------------------------------------------------|
