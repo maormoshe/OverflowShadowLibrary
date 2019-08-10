@@ -10,13 +10,13 @@
 
 ##Installation
 
-1. Download from npm: 
+1. Download from npm:  
 `npm install ngx-overflow-shadow --save`
 
-2. Import the `NgxOverflowShadowModule` module: 
+2. Import the `NgxOverflowShadowModule` module:    
 `import {NgxOverflowShadowModule} from 'ngx-overflow-shadow'`
 
-3. Add `NgxOverflowShadowModule` to your module imports:
+3. Add `NgxOverflowShadowModule` to your module imports:  
 ```ts
  @NgModule({ ... imports: [ ... NgxOverflowShadowModule ] })
  ```
