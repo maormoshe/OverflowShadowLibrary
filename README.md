@@ -6,7 +6,7 @@
 
 - A simple usage example can be found under `src/app` directory of this repository.
 
-- You may also visit the online usage example on `https://maormoshe.github.io/OverflowShadowLibrary/`
+- You may also visit the online usage example on https://vlio20.github.io/angular-datepicker/
 
 ## Installation
 
