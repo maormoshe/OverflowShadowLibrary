@@ -1,6 +1,6 @@
 # NgxOverflowShadow
 
-- A simple directive to be used on any scrollable container to add a shadow on the bottom of the container.
+- A simple Angular directive to be used on any scrollable container for adding a shadow on the bottom of the container.
 
 ## Demo
 
