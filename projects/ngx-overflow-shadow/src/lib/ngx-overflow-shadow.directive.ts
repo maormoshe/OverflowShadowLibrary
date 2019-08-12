@@ -50,8 +50,6 @@ export class NgxOverflowShadowDirective implements AfterViewInit, OnDestroy {
     private callback(entries: IntersectionObserverEntry[]): void {
         const {isIntersecting} = entries[0];
 
-        console.log(entries);
-
         if (isIntersecting) {
             this.renderer.removeStyle(this.bottomShadowDiv, 'boxShadow');
         } else {
