@@ -1,6 +1,6 @@
 {
   "name": "ngx-overflow-shadow",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "A simple Angular directive to be used on any scrollable container for adding a shadow on the bottom of the container.",
   "author": "Maor Moshe",
   "repository": {
