@@ -1,6 +1,6 @@
 # NgxOverflowShadow
 
-- A simple Angular directive to be used on any scrollable container for adding a shadow on the bottom of the container.
+- A simple Angular directive to be used on any scrollable container for adding a shadow on the top/bottom of the container.
 
 ## Demo
 
@@ -27,7 +27,8 @@ Put the `ngxOverflowShadow` directive selector on any scrollable container.
 
 ### Input()
 
-| Name           | Type       | Default                          | Description                                                           |
-|----------------|:----------:|:--------------------------------:|:----------------------------------------------------------------------|
-| shadowStyle    | string     | 0 0 8px 1px rgba(0, 0, 0, 0.5)   | The box-shadow style you want to apply on the bottom of the container.|
-
+| Name           | Type       | Default                          | Description                                                               |
+|----------------|:----------:|:--------------------------------:|:--------------------------------------------------------------------------|
+| top            | boolean    | false                            | Indicator for top shadow display.                                         |
+| bottom         | boolean    | true                             | Indicator for bottom shadow display.                                      |
+| shadowStyle    | string     | 0 0 8px 1px rgba(0, 0, 0, 0.5)   | The box-shadow style you want to apply on the top/bottom of the container.|
