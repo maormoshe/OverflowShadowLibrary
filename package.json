@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:directive": "ng build NgxOverflowShadow",
+    "build:directive": "ng build NgxOverflowShadow --prod",
     "publish:directive": "cd dist/ngx-overflow-shadow && npm publish",
     "build:n:publish:demo": "ng build --prod --base-href /OverflowShadowLibrary/ && git add -A && git commit -am \"new demo\" && npm run publish:demo && git checkout master",
     "publish:demo": "git subtree push --prefix dist/OverflowShadowLibrary origin gh-pages"
