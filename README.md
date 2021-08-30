@@ -16,7 +16,7 @@
 ## Installation
 
 1. Download from npm:  
-`npm install ngx-overflow-shadow --save`
+`npm install ngx-overflow-shadow`
 
 2. Import the `NgxOverflowShadowModule` module:    
 `import {NgxOverflowShadowModule} from 'ngx-overflow-shadow'`
