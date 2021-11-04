@@ -95,19 +95,6 @@
             "scripts": []
           }
         },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -146,18 +133,6 @@
             "main": "projects/ngx-overflow-shadow/src/test.ts",
             "tsConfig": "projects/ngx-overflow-shadow/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-overflow-shadow/karma.conf.js"
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "projects/ngx-overflow-shadow/tsconfig.lib.json",
-              "projects/ngx-overflow-shadow/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
           }
         }
       }
